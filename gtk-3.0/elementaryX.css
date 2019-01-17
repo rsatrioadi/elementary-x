@@ -50,10 +50,9 @@ dialog .titlebar :not(.suggested-action):not(.destructive-action) label {
 
 /* MY CSD STARTS FROM HERE */
 
-
 headerbar.default-decoration button.titlebutton,
 .titlebar.default-decoration button.titlebutton {
-    padding: 0 4px;
+    padding: 0;
     min-width: 0;
     min-height: 0;
     margin: 0;
@@ -62,7 +61,7 @@ headerbar.default-decoration button.titlebutton,
 headerbar button.titlebutton,
 .titlebar button.titlebutton {
     padding: 0;
-    min-width: 20px;    /* Changed 24 to 20px [Spacing between titlebuttons]*/
+    min-width: 12px;    /* [Spacing between titlebuttons]*/
     border-color: transparent;
     background-color: transparent;
     background-image: none;
@@ -118,6 +117,7 @@ headerbar button.titlebutton.minimize:backdrop,
 
 headerbar button.titlebutton.close,
 .titlebar button.titlebutton.close {
+    margin:0 0 0 8px;
     background-image: -gtk-scaled(url("assets/titlebutton-close.png"), url("assets/titlebutton-close@2.png"));
 }
 
